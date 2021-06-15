@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Prata|Roboto:light|Work Sans:regular"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="/css/style.css">
     <title>Virtuos</title>
     <script type="text/javascript">
@@ -38,7 +40,10 @@
             document.getElementById('navlinks3').classList.remove('navbar-text0');
             document.getElementById('busca').style.fill = '#fffaf1';
             document.getElementById('compra').style.fill = '#fffaf1';
-            
+            document.getElementById('hamburga').classList.remove('navbar-toggler0');
+            document.getElementById('hamburga').classList.add('navbar-toggler1');
+            document.getElementById('hamburga').classList.remove('navbar button.navbar-toggler0');
+            document.getElementById('hamburga').classList.add('navbar button.navbar-toggler1');
             // add padding top to show content behind navbar
             navbar_height = document.querySelector('.navbar').offsetHeight;
             document.body.style.paddingTop = navbar_height + 'px';
@@ -56,6 +61,10 @@
             document.getElementById('navlinks3').classList.remove('navbar-text1');
             document.getElementById('busca').style.fill = '#373737';
             document.getElementById('compra').style.fill = '#373737';
+            document.getElementById('hamburga').classList.remove('navbar-toggler1');
+            document.getElementById('hamburga').classList.add('navbar-toggler0');
+            document.getElementById('hamburga').classList.remove('navbar button.navbar-toggler1');
+            document.getElementById('hamburga').classList.add('navbar button.navbar-toggler0');
              // remove padding top from body
             document.body.style.paddingTop = '0';
           }
@@ -66,11 +75,11 @@
   </head>
   <body>
     <!-- ============= COMPONENT ============== -->
-    <nav id="navbar_top" class="navbar navbar-expand-lg">
+    <nav id="navbar_top" class="navbar navbar-expand-lg ">
       <div class="container">
          <a id="navbar_brand" class="nav-link navbar-brand">Virtuos</a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
+       <button class="navbar-toggler" id="hamburga" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
          </button>
        <div class="collapse navbar-collapse" id="main_nav">
        
@@ -199,7 +208,7 @@
       />
     </div>
     <div class="d-lg-flex container-fluid footer col-md-12">
-      <div class="container  align-self-center flex-fill bd-highlight">
+      <div class="container  align-self-center bd-highlight">
           <div class="fa fa-facebook px-3 footerText"></div>
           <div class="fa fa-twitter px-3 footerText"></div>
           <div class="fa fa-instagram px-3 footerText"></div>
