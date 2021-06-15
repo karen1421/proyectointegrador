@@ -9,21 +9,23 @@
   text-align: center;
 }
 .aboutStyle {
-  padding: 2rem;
+  padding: 3vmin;
   font-family: "Roboto";
-  font-size: 1.75rem;
+  font-size: 4.6vmin;
   text-align: center;
 }
 .teamStyle {
   font-family: "Work Sans";
-  font-size: 6.25rem;
+  font-size: 8vmin;
   text-align: center;
 }
 .nameStyle {
   font-family: "Prata";
+  font-size: 4.3vmin;
 }
 .bioStyle {
   font-family: "Roboto";
+  font-size: 3.5vmin;
 }
 .virtuosTitle {
   font-family: "bauhaus";
@@ -87,7 +89,7 @@
 .navbar-text0{
   color: #373737;
   font-family: Roboto;
-  font-size: 1.2rem;
+  font-size: 2vmin;
   -webkit-transition: background-color 0.4s ease-out;
   -moz-transition: background-color 0.4s ease-out;
   -o-transition: background-color 0.4s ease-out;
@@ -96,7 +98,7 @@
 .navbar-text1{
     color: #fffaf1;
     font-family: Roboto;
-    font-size: 1.2rem;
+    font-size: 2vmin;
     -webkit-transition: background-color 0.4s ease-out;
     -moz-transition: background-color 0.4s ease-out;
     -o-transition: background-color 0.4s ease-out;
