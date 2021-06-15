@@ -10,7 +10,7 @@
 }
 .aboutStyle {
   padding: 2rem;
-  font-family: "Prata";
+  font-family: "Roboto";
   font-size: 1.75rem;
   text-align: center;
 }
@@ -61,10 +61,18 @@
   transition: opacity 1.5s ease;
 }
 .navbar-custom0 {
-	background-color: #373737;
+  background-color: #373737;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
 }
 .navbar-custom1 {
 	background-color: #37373700;
+	-webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
 }
 .navbar-brand {
     color: #FFB938;
@@ -76,10 +84,23 @@
     color: #FFB938;
     cursor: pointer;
 }
-.navbar-text {
+.navbar-text0{
+  color: #373737;
+  font-family: Roboto;
+  font-size: 1.2rem;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-text1{
     color: #fffaf1;
     font-family: Roboto;
     font-size: 1.2rem;
+    -webkit-transition: background-color 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
 }
 .navbar-text:hover{
     color: #ffb938;

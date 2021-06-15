@@ -19,47 +19,89 @@
     />
     <link rel="stylesheet" href="/css/style.css">
     <title>Virtuos</title>
-    
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(){
+        
+        window.addEventListener('scroll', function() {
+             
+          if (window.scrollY > 10) {
+            document.getElementById('navbar_top').classList.add('fixed-top');
+            document.getElementById('navbar_top').classList.add('navbar-custom0');
+            document.getElementById('navbar_top').classList.remove('navbar-custom1');
+            document.getElementById('navlinks0').classList.add('navbar-text1');
+            document.getElementById('navlinks0').classList.remove('navbar-text0');
+            document.getElementById('navlinks1').classList.add('navbar-text1');
+            document.getElementById('navlinks1').classList.remove('navbar-text0');
+            document.getElementById('navlinks2').classList.add('navbar-text1');
+            document.getElementById('navlinks2').classList.remove('navbar-text0');
+            document.getElementById('navlinks3').classList.add('navbar-text1');
+            document.getElementById('navlinks3').classList.remove('navbar-text0');
+            document.getElementById('busca').style.fill = '#fffaf1';
+            document.getElementById('compra').style.fill = '#fffaf1';
+            
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+          } else {
+             document.getElementById('navbar_top').classList.remove('fixed-top');
+             document.getElementById('navbar_top').classList.remove('navbar-custom0');
+            document.getElementById('navbar_top').classList.add('navbar-custom1');
+            document.getElementById('navlinks0').classList.add('navbar-text0');
+            document.getElementById('navlinks0').classList.remove('navbar-text1');
+            document.getElementById('navlinks1').classList.add('navbar-text0');
+            document.getElementById('navlinks1').classList.remove('navbar-text1');
+            document.getElementById('navlinks2').classList.add('navbar-text0');
+            document.getElementById('navlinks2').classList.remove('navbar-text1');
+            document.getElementById('navlinks3').classList.add('navbar-text0');
+            document.getElementById('navlinks3').classList.remove('navbar-text1');
+            document.getElementById('busca').style.fill = '#373737';
+            document.getElementById('compra').style.fill = '#373737';
+             // remove padding top from body
+            document.body.style.paddingTop = '0';
+          }
+        });
+      }); 
+      // DOMContentLoaded  end
+    </script>
   </head>
   <body>
     <!-- ============= COMPONENT ============== -->
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-custom0 fixed-top">
+    <nav id="navbar_top" class="navbar navbar-expand-lg">
       <div class="container">
          <a id="navbar_brand" class="nav-link navbar-brand">Virtuos</a>
-
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">Menu</span>
+           <span class="navbar-toggler-icon"></span>
          </button>
-        
-
        <div class="collapse navbar-collapse" id="main_nav">
-        <ul class="navbar-nav ms-auto">
-         <li class="nav-item"><a class="nav-link navbar-text" href="#">Productos</a></li>
-         <li class="nav-item"><a class="nav-link navbar-text" href="#">Contacto</a></li>
-         <li class="nav-item"><a class="nav-link navbar-text" href="#">Acerca</a></li>
-         <li class="nav-item"><a class="nav-link navbar-text" href="#">Inicio de sesión</a></li>
+       
+     
+       <ul class="navbar-nav ms-auto">
+         <li class="nav-item"><a id="navlinks0" class="nav-link " href="#">Productos</a></li>
+         <li class="nav-item"><a id="navlinks1" class="nav-link " href="#">Contacto</a></li>
+         <li class="nav-item"><a id="navlinks2" class="nav-link " href="#">Acerca</a></li>
+         <li class="nav-item"><a id="navlinks3" class="nav-link " href="#">Inicio de sesión</a></li>
+         </ul>
+         <ul class="navbar-nav sm-icons mr-0">
+             <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" style="fill:#fffaf1;" id="busca" class="bi bi-search" viewBox="0 0 16 16">
+               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+             </svg></a></li>
+             <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" style="fill:#fffaf1;" id="compra" class="bi bi-cart" viewBox="0 0 16 16">
+               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+             </svg></a></li>
+           </ul>
+         </li>
        </ul>
-       <ul class="navbar-nav sm-icons mr-0">
-        <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="#fffaf1" class="bi bi-search" viewBox="0 0 16 16">
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#fffaf1" class="bi bi-cart" viewBox="0 0 16 16">
-          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-        </svg></a></li>
-      </ul>
+     
        </div> <!-- navbar-collapse.// -->
       </div> <!-- container-fluid.// -->
      </nav>
  <!-- ============= COMPONENT END// ============== -->
 
-    <h1 class="virtuosHeader">Virtuos</h1>
+    <h1 class="teamStyle" style="margin-top: 5.5rem">Acerca de nosotros</h1>
 
     <p class="aboutStyle">
-      Este proyecto nace con la finalidad de mejorar los procesos de e-commerce
-      como la compra y venta de productos. a través de una UI amigable,
-      responsiva y fluida, así como haciendo mas eficiente la lógica del
-      negocio. Somos un equipo de desarrollo ágil Full stack con orientacion al
-      detalle, el equipo esta conformado por:
+      Este proyecto nace con la finalidad de mejorar los procesos de compra y venta de productos en línea, a través de una interfaz de usuario (UI) amigable, responsiva y fluida.  Somos un equipo de desarrollo ágil Full stack con orientación al detalle que apuesta por la creación de herramientas eficientes y accesibles. El equipo esta conformado por:
+
     </p>
 
     <h1 class="teamStyle">El Equipo</h1>
@@ -82,7 +124,7 @@
     <!--  2 -->
     <div class="parentContainer">
       <div class="textToBeCovered opaText">
-        <h2 class="nameStyle">Lilana Navarro</h2>
+        <h2 class="nameStyle">Liliana Navarro</h2>
         <p bioStyle>
           Administradora financiera enfocada en la solución de procesos de trabajo mediante herramientas tecnológicas. Desarrolladora de proyectos en JS y Java y entusiasta de las plantas.
         </p>
