@@ -11,12 +11,12 @@
 .aboutStyle {
   padding: 3vmin;
   font-family: "Roboto";
-  font-size: 4.6vmin;
+  font-size: 3.6vmin;
   text-align: center;
 }
 .teamStyle {
   font-family: "Work Sans";
-  font-size: 8vmin;
+  font-size: 6vmin;
   text-align: center;
 }
 .nameStyle {
@@ -33,7 +33,7 @@
   font-size: 3.4rem;
 }
 .parentContainer {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   margin-top: 1.25rem;
   padding-top: 0.5rem;
   padding-left: 3.125rem;
@@ -128,4 +128,9 @@
     color:#EEC23E !important;
 }
 
-   
+body{
+  background: url("/images/mesa-premium-white-woodgrain-detail-1250x570.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
