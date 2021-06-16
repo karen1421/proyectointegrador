@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Bauhaus";
+  src: url("/src/public/assets/fonts/bauhaus-93.ttf") format("truetype");
+}
+.virtuosHeader {
+  margin-top: 5.5rem;
+  font-family: "bauhaus";
+  font-size: 7.3rem;
+  text-align: center;
+}
+.aboutStyle {
+  padding: 3vmin;
+  font-family: "Roboto";
+  font-size: 3.6vmin;
+  text-align: center;
+}
+.teamStyle {
+  font-family: "Work Sans";
+  font-size: 6vmin;
+  text-align: center;
+}
+.nameStyle {
+  font-family: "Prata";
+  font-size: 4.3vmin;
+}
+.bioStyle {
+  font-family: "Roboto";
+  font-size: 3.5vmin;
+}
+.virtuosTitle {
+  font-family: "bauhaus";
+  color: #ffb938;
+  font-size: 3.4rem;
+}
+.parentContainer {
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 15vmin;
+  padding-top: 3vmin;
+  padding-left: 3vw;
+  height: 12em;
+  position: relative;
+}
+.parentContainer .textToBeCovered {
+  padding-left: 45vmin;
+  font-size: 6vmin;
+  position: relative;
+  z-index: 0;
+  opacity: 0;
+}
+.parentContainer .imageOnTop {
+  left: 40%;
+  position: absolute;
+  top: 1.5vmin;
+  z-index: 1;
+}
+.parentContainer:hover .moveImg {
+  transition: transform 0.5s linear;
+  animation-delay: 0.3s;
+  transform: translate(-34vw, 0);
+}
+.parentContainer:hover .opaText {
+  opacity: 1;
+  transition: opacity 1.5s ease;
+}
+.navbar-custom0 {
+  background-color: #373737;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-custom1 {
+	background-color: #37373700;
+	-webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-brand {
+    color: #FFB938;
+    font: bold;
+    font-family: bauhaus;
+    font-size: 3.2rem;
+}
+.navbar-brand:hover{
+    color: #FFB938;
+    cursor: pointer;
+}
+.navbar-text0{
+  color: #373737;
+  font-family: Roboto;
+  font-size: 2.3vmin;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-text1{
+    color: #fffaf1;
+    font-family: Roboto;
+    font-size: 2.3vmin;
+    -webkit-transition: background-color 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+}
+.navbar-text1:hover{
+    color: #ffb938;
+    text-decoration: none;
+}
+.navbar-text0:hover{
+  color: #ffb938;
+  text-decoration: none;
+}
+ .nav-link:focus{
+    color: #ffb938;
+}
+.nav-link:hover svg path {
+    fill: #ffb938;
+}
+
+.navbar-toggler0{
+  border-color: #373737;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-toggler1{
+  border-color: #fffaf1;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+} 
+
+.navbar button.navbar-toggler0 {
+   color: #373737;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar button.navbar-toggler1 {
+  color: #fffaf1;
+ -webkit-transition: background-color 0.4s ease-out;
+ -moz-transition: background-color 0.4s ease-out;
+ -o-transition: background-color 0.4s ease-out;
+ transition: background-color 0.4s ease-out;
+}
+
+.footer {
+  left:0px;
+  bottom:0px;
+  background-color: #373737 !important;
+  margin-top: auto;
+}
+.footerText{
+  cursor: pointer ;
+  color: #D1D5DE ;
+  font-size: 2.3vmin !important;
+}
+.footerText:hover {
+    color:#EEC23E !important;
+}
+
+body{
+  background: url("/src/public/assets/img/mesa-premium-white-woodgrain-detail-1250x570.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  width: 33vmin;
+  height: 33vmin;
+}
+
+form{
+  width: 50vw;
+  background-color: #e7e7e700;
+  margin: 0 auto;
+}
+
+form>input, form>textarea, form>select{
+  margin-bottom: 1.5vmin;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 1vmin;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  border: none; 
+  color: #525c66; 
+  font-size: 1em;
+  resize: horizontal; 
+}
+
+.btn-de-froma {
+	background-color: #eec23e;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+}
+form>button:hover{
+	background-color: #525c66;
+}
+article {
+  margin: auto 0;
+}
+textarea { resize: none; }
