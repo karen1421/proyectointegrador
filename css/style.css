@@ -158,7 +158,7 @@
 .footerText{
   cursor: pointer ;
   color: #D1D5DE ;
-  font-size: 2vmin !important;
+  font-size: 2.3vmin !important;
 }
 .footerText:hover {
     color:#EEC23E !important;
