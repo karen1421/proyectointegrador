@@ -89,7 +89,7 @@
 .navbar-text0{
   color: #373737;
   font-family: Roboto;
-  font-size: 2vmin;
+  font-size: 2.3vmin;
   -webkit-transition: background-color 0.4s ease-out;
   -moz-transition: background-color 0.4s ease-out;
   -o-transition: background-color 0.4s ease-out;
@@ -98,7 +98,7 @@
 .navbar-text1{
     color: #fffaf1;
     font-family: Roboto;
-    font-size: 2vmin;
+    font-size: 2.3vmin;
     -webkit-transition: background-color 0.4s ease-out;
     -moz-transition: background-color 0.4s ease-out;
     -o-transition: background-color 0.4s ease-out;
@@ -149,6 +149,7 @@
   left:0px;
   bottom:0px;
   background-color: #373737 !important;
+  margin-top: auto;
 }
 .footerText{
   cursor: pointer ;
@@ -164,6 +165,9 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img{
@@ -172,9 +176,8 @@ img{
 }
 
 form{
-  /* padding: 12vmin; */
-  max-width: 38vw;
-  background-color: #E7E7E7;
+  width: 50vw;
+  background-color: #e7e7e700;
   margin: 0 auto;
 }
 
@@ -202,5 +205,7 @@ form>input, form>textarea, form>select{
 form>button:hover{
 	background-color: #525c66;
 }
-
+article {
+  margin: auto 0;
+}
 textarea { resize: none; }
