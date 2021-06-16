@@ -170,3 +170,37 @@ img{
   width: 33vmin;
   height: 33vmin;
 }
+
+form{
+  /* padding: 12vmin; */
+  max-width: 38vw;
+  background-color: #E7E7E7;
+  margin: 0 auto;
+}
+
+form>input, form>textarea, form>select{
+  margin-bottom: 1.5vmin;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 1vmin;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  border: none; 
+  color: #525c66; 
+  font-size: 1em;
+  resize: horizontal; 
+}
+
+.btn-de-froma {
+	background-color: #eec23e;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+}
+form>button:hover{
+	background-color: #525c66;
+}
+
+textarea { resize: none; }
