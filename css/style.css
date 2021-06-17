@@ -240,4 +240,18 @@ top: 55px;
   font-family: "bauhaus";
   color: #ffb938;
   font-size: 2rem;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  left: 45%;
+}
+
+#vacio{
+  color: #fffaf1;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 40%;
+  left: 22%;
 }
