@@ -63,6 +63,15 @@ router.get("/about", function (req, res) {
 router.get("/contact", function (req, res) {
   res.sendFile(path.join(__dirname + "/html/contact.html"));
 });
+router.get("/home", function (req, res) {
+  res.sendFile(path.join(__dirname + "/html/landing.html"));
+});
+router.post("/contact-page", function (req, res) {
+  res.redirect('/html/contact.html');
+});
+router.post("/about-page", function (req, res) {
+  res.redirect('/html/about.html');
+});
 router.post("/send-mail", function (req, res) {
   let message = `Phone: ${req.body.telephone}\n Name: ${req.body.name}\n  Email: ${req.body.email}\n${req.body.message}`
   console.log(req.body.name);

@@ -85,9 +85,16 @@
        
      
        <ul class="navbar-nav ms-auto">
-         <li class="nav-item"><a id="navlinks0" class="nav-link " href="#">Productos</a></li>
-         <li class="nav-item"><a id="navlinks1" class="nav-link " href="#">Contacto</a></li>
-         <li class="nav-item"><a id="navlinks2" class="nav-link " href="#">Acerca</a></li>
+         <li class="nav-item">
+           <a id="navlinks0" class="nav-link " href="/html/contact.html">Productos</a>
+          </li>
+         <li class="nav-item">
+          
+           <a onclick="document.getElementById('myform1').submit()" id="navlinks1" class="nav-link " href="#">Contacto</a>
+          </li>
+         <li class="nav-item">
+           <a onclick="document.getElementById('myform2').submit()" id="navlinks2" class="nav-link " href="#">Acerca</a>
+          </li>
          <li class="nav-item"><a id="navlinks3" class="nav-link " href="#">Inicio de sesión</a></li>
          </ul>
          <ul class="navbar-nav sm-icons mr-0">
@@ -105,7 +112,8 @@
       </div> <!-- container-fluid.// -->
      </nav>
  <!-- ============= COMPONENT END// ============== -->
- 
+ <form id="myform1" method="POST" action="/contact-page"></form>
+ <form id="myform2" method="POST" action="/about-page"></form>
  <!-- contenido del cuerpo -->
  <main>
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
