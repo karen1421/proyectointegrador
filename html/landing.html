@@ -77,7 +77,7 @@
     <!-- ============= COMPONENT ============== -->
     <nav id="navbar_top" class="navbar navbar-expand-lg ">
       <div class="container">
-         <a id="navbar_brand" class="nav-link navbar-brand" href="landing.html">Virtuos</a>
+         <a id="navbar_brand" class="nav-link navbar-brand">Virtuos</a>
        <button class="navbar-toggler" id="hamburga" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-bars"></i></span>
          </button>
@@ -85,14 +85,11 @@
        
      
        <ul class="navbar-nav ms-auto">
-         <li class="nav-item">
-           <a id="navlinks0" class="nav-link " href="/html/contact.html">Productos</a>
-          </li>
-        
-         <li class="nav-item"><a id="navlinks0" class="nav-link navbar-text0" href="#">Productos</a></li>
-         <li class="nav-item"><a id="navlinks1" class="nav-link navbar-text0" href="#">Contacto</a></li>
-         <li class="nav-item"><a id="navlinks2" class="nav-link navbar-text0" href="#">Acerca</a></li>
-         <li class="nav-item"><a id="navlinks3" class="nav-link navbar-text0" href="#">Inicio de sesión</a></li>
+
+         <li class="nav-item"><a id="navlinks0" class="nav-link navbar-text0">Productos</a></li>
+         <li onclick="document.getElementById('formContact').submit();" class="nav-item" href="#"><a id="navlinks1" class="nav-link navbar-text0">Contacto</a></li>
+         <li onclick="document.getElementById('formAbout').submit();"class="nav-item"><a id="navlinks2" class="nav-link navbar-text0">Acerca</a></li>
+         <li class="nav-item"><a id="navlinks3" class="nav-link navbar-text0">Inicio de sesión</a></li>
          </ul>
          <ul class="navbar-nav sm-icons mr-0">
              <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" style="fill:#373737;" id="busca" class="bi bi-search" viewBox="0 0 16 16">
@@ -109,8 +106,9 @@
       </div> <!-- container-fluid.// -->
      </nav>
  <!-- ============= COMPONENT END// ============== -->
- <form id="myform1" method="POST" action="/contact-page"></form>
- <form id="myform2" method="POST" action="/about-page"></form>
+ <form id="formHome" method="POST" action="/home-page"></form>
+ <form id="formContact" method="POST" action="/contact-page"></form>
+ <form id="formAbout" method="POST" action="/about-page"></form>
  <!-- contenido del cuerpo -->
  <main>
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">

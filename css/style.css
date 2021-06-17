@@ -111,6 +111,7 @@
 .navbar-text0:hover{
   color: #ffb938;
   text-decoration: none;
+  cursor: pointer;
 }
  .nav-link:focus{
     color: #ffb938;
