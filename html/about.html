@@ -1,161 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Virtuos</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <h1>  </h1>
-  <style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400);
-form{
-  padding: 60px;
-  max-width: 500px;
-  background-color: #E7E7E7;
-  margin: 0 auto;
-}
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Prata|Roboto:light|Work Sans:regular"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
-form input, form textarea, form select{
-  margin-bottom: 15px;
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; 
-  border: none; 
-  color: #525c66; 
-  font-size: 1em;
-  resize: horizontal; 
-}
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Virtuos</title>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(){
+        
+        window.addEventListener('scroll', function() {
+             
+          if (window.scrollY > 10) {
+            document.getElementById('navbar_top').classList.add('fixed-top');
+            document.getElementById('navbar_top').classList.add('navbar-custom0');
+            document.getElementById('navbar_top').classList.remove('navbar-custom1');
+            document.getElementById('navlinks0').classList.add('navbar-text1');
+            document.getElementById('navlinks0').classList.remove('navbar-text0');
+            document.getElementById('navlinks1').classList.add('navbar-text1');
+            document.getElementById('navlinks1').classList.remove('navbar-text0');
+            document.getElementById('navlinks2').classList.add('navbar-text1');
+            document.getElementById('navlinks2').classList.remove('navbar-text0');
+            document.getElementById('navlinks3').classList.add('navbar-text1');
+            document.getElementById('navlinks3').classList.remove('navbar-text0');
+            document.getElementById('busca').style.fill = '#fffaf1';
+            document.getElementById('compra').style.fill = '#fffaf1';
+            document.getElementById('hamburga').classList.remove('navbar-toggler0');
+            document.getElementById('hamburga').classList.add('navbar-toggler1');
+            document.getElementById('hamburga').classList.remove('button.navbar-toggler0');
+            document.getElementById('hamburga').classList.add('button.navbar-toggler1');
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+          } else {
+             document.getElementById('navbar_top').classList.remove('fixed-top');
+             document.getElementById('navbar_top').classList.remove('navbar-custom0');
+            document.getElementById('navbar_top').classList.add('navbar-custom1');
+            document.getElementById('navlinks0').classList.add('navbar-text0');
+            document.getElementById('navlinks0').classList.remove('navbar-text1');
+            document.getElementById('navlinks1').classList.add('navbar-text0');
+            document.getElementById('navlinks1').classList.remove('navbar-text1');
+            document.getElementById('navlinks2').classList.add('navbar-text0');
+            document.getElementById('navlinks2').classList.remove('navbar-text1');
+            document.getElementById('navlinks3').classList.add('navbar-text0');
+            document.getElementById('navlinks3').classList.remove('navbar-text1');
+            document.getElementById('busca').style.fill = '#373737';
+            document.getElementById('compra').style.fill = '#373737';
+            document.getElementById('hamburga').classList.remove('navbar-toggler1');
+            document.getElementById('hamburga').classList.add('navbar-toggler0');
+            document.getElementById('hamburga').classList.remove('button.navbar-toggler1');
+            document.getElementById('hamburga').classList.add('button.navbar-toggler0');
+             // remove padding top from body
+            document.body.style.paddingTop = '0';
+          }
+        });
+      }); 
+      // DOMContentLoaded  end
+    </script>
+  </head>
+  <body>
+    <!-- ============= COMPONENT ============== -->
+    <nav id="navbar_top" class="navbar navbar-expand-lg ">
+      <div class="container">
+         <a id="navbar_brand" class="nav-link navbar-brand">Virtuos</a>
+       <button class="navbar-toggler" id="hamburga" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+         </button>
+       <div class="collapse navbar-collapse" id="main_nav">
+       
+     
+       <ul class="navbar-nav ms-auto">
+         <li class="nav-item"><a id="navlinks0" class="nav-link" href="#">Productos</a></li>
+         <li class="nav-item"><a id="navlinks1" class="nav-link" href="#">Contacto</a></li>
+         <li class="nav-item"><a id="navlinks2" class="nav-link" href="#">Acerca</a></li>
+         <li class="nav-item"><a id="navlinks3" class="nav-link" href="#">Inicio de sesión</a></li>
+         </ul>
+         <ul class="navbar-nav sm-icons mr-0">
+             <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" style="fill:#373737;" id="busca" class="bi bi-search" viewBox="0 0 16 16">
+               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+             </svg></a></li>
+             <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" style="fill:#373737;" id="compra" class="bi bi-cart" viewBox="0 0 16 16">
+               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+             </svg></a></li>
+           </ul>
+         </li>
+       </ul>
+     
+       </div> <!-- navbar-collapse.// -->
+      </div> <!-- container-fluid.// -->
+     </nav>
+ <!-- ============= COMPONENT END// ============== -->
 
-form button {
-	display: block;
-	background-color: #eec23e;
-	padding: 10px 45px 10px 45px;
-	border: 0;
-	font-size: 1em; 
-	color: 	white;
-  font-family: "Roboto", sans-serif;
-}
-form button hover{
-	background-color: #525c66;
-}
-textarea { resize: none; }
+    <h1 class="teamStyle" style="margin-top: 5.5rem">Acerca de nosotros</h1>
 
-.navbar-custom0 {
-	background-color: #373737;
-}
-.navbar-custom1 {
-	background-color: #37373700;
-}
-.navbar-brand {
-    color: #FFB938;
-    font: bold;
-    font-family: bauhaus;
-    font-size: 3.2rem;
-}
-.navbar-brand:hover{
-    color: #FFB938;
-    cursor: pointer;
-}
-.navbar-text {
-    color: #fffaf1;
-    font-family: Roboto;
-    font-size: 1.2rem;
-}
-.navbar-text:hover{
-    color: #ffb938;
-    text-decoration: none;
-}
- .nav-link:focus{
-    color: #ffb938;
-}
-.nav-link:hover svg path {
-    fill: #ffb938;
-}
-.footer {
-  left:0px;
-  bottom:0px;
-  background-color: #373737 !important;
-}
-.footerText{
-  cursor: pointer ;
-  color: #D1D5DE ;
-  font-size: 25px !important;
-}
-.footerText:hover {
-    color:#EEC23E !important;
-}
+    <p class="aboutStyle">
+      Este proyecto nace con la finalidad de mejorar los procesos de compra y venta de productos en línea, a través de una interfaz de usuario (UI) amigable, responsiva y fluida.  Somos un equipo de desarrollo ágil Full stack con orientación al detalle que apuesta por la creación de herramientas eficientes y accesibles. El equipo esta conformado por:
 
+    </p>
 
-  </style>
+    <h1 class="teamStyle">El Equipo</h1>
+   <!--  1 -->
+    <div class="parentContainer container-fluid">
+      <div class="textToBeCovered opaText">
+        <h2 class="nameStyle">Karen Maldonado</h2>
+        <p class="bioStyle">
+          Nací en Chiapas. Soy Lic. en Mercadotecnia con enfoque en Investigación de Mercado y Marketing Digital. Actualmente soy parte del equipo como  Desarrolladora Full Stack.
 
-</head>
-<body>
-  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-custom0 fixed-top">
-    <div class="container">
-       <a id="navbar_brand" class="nav-link navbar-brand">Virtuos</a>
-
-     <div class="collapse navbar-collapse" id="main_nav">
-      <ul class="navbar-nav ms-auto">
-       <li class="nav-item"><a class="nav-link navbar-text" href="#">Productos</a></li>
-       <li class="nav-item"><a class="nav-link navbar-text" href="#">Contacto</a></li>
-       <li class="nav-item"><a class="nav-link navbar-text" href="#">Acerca</a></li>
-       <li class="nav-item"><a class="nav-link navbar-text" href="#">Inicio de sesión</a></li>
-     </ul>
-     <ul class="navbar-nav sm-icons mr-0">
-      <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="#fffaf1" class="bi bi-search" viewBox="0 0 16 16">
-        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-      </svg></a></li>
-      <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#fffaf1" class="bi bi-cart" viewBox="0 0 16 16">
-        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-      </svg></a></li>
-    </ul>
-     </div> <!-- navbar-collapse.// -->
-    </div> <!-- container-fluid.// -->
-   </nav>
-<form action="mailto:lilimaldonav@gmail.com" method="post" enctype="text/plain"name="myForm" class="formulario" id="formulario">
-  <select class="custom-select" id="nombreSelect" required>
-    <option selected>Selecciona una opción</option>
-    <option value="1">Compras</option>
-    <option value="2">Ventas</option>
-    <option value="3">Otro</option>
-  </select>
-  <br>
-    <input type="text" name="form-control" id="exampleFormControlInput1" placeholder="Nombre" required><br>
-    <textarea name="texto" rows="4" cols="20" placeholder="Mensaje" required></textarea><br>
-    <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="nombre@ejemplo.com" required><br>
-    <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="5555-5555" required>
-      <button type="submit" value="submit" class="btn btn-primary">Enviar</button>
-  </form>
-
-</div>
-<div class="d-lg-flex container-fluid footer col-md-12">
-  <div class="container  align-self-center flex-fill bd-highlight">
-      <div class="fa fa-facebook px-3 footerText"></div>
-      <div class="fa fa-twitter px-3 footerText"></div>
-      <div class="fa fa-instagram px-3 footerText"></div>
-  </div>
-  
-      <div class="p-1 d-flex justify-content-end ">
-          <div class="p-4 footerText ">Términos</div>
-          <div class="p-4 footerText">Copyrigth</div>
+        </p>
       </div>
-</div>
- 
- <script
+      <img
+        class="rounded-circle imageOnTop moveImg img-fluid"
+        alt="100x100"
+        src="/images/karen_perfil.png"
+        data-holder-rendered="true"
+      />
+    </div>
+    <!--  2 -->
+    <div class="parentContainer container-fluid">
+      <div class="textToBeCovered opaText">
+        <h2 class="nameStyle">Liliana Navarro</h2>
+        <p class="bioStyle">
+          Administradora financiera enfocada en la solución de procesos de trabajo mediante herramientas tecnológicas. Desarrolladora de proyectos en JS y Java y entusiasta de las plantas.
+        </p>
+      </div>
+      <img
+        class="rounded-circle imageOnTop moveImg img-fluid"
+        alt="100x100"
+        src="/images/lily_perfil.png"
+        data-holder-rendered="true"
+      />
+    </div>
+    <!--  3 -->
+    <div class="parentContainer container-fluid">
+      <div class="textToBeCovered opaText">
+        <h2 class="nameStyle">Alexis Cervantes</h2>
+        <p class="bioStyle">
+          Estudiante de ingeniería industrial, con  en busca de darle un giro a su carrera laboral enfocado al FrontEnd.
+        </p>
+      </div>
+      <img
+        class="rounded-circle imageOnTop moveImg img-fluid"
+        alt="100x100"
+        src="/images/alexis_perfil.png"
+        data-holder-rendered="true"
+      />
+    </div>
+    <!--  4 -->
+    <div class="parentContainer container-fluid">
+      <div class="textToBeCovered opaText">
+        <h2 class="nameStyle">Rodrigo Contreras</h2>
+        <p class="bioStyle">
+          Ingeniero en diseño electrónico basado en Guadalajara, México. Apasionado de la aventura, la fotografía y la cocina. Dedicación al funcionamiento del UX desde ambos frentes.
+        </p>
+      </div>
+      <img
+        class="rounded-circle imageOnTop moveImg img-fluid"
+        alt="100x100"
+        src="/images/rodrigo_perfil.png"
+        data-holder-rendered="true"
+      />
+    </div>
+     <!--  5 -->
+     <div class="parentContainer container-fluid">
+      <div class="textToBeCovered opaText">
+        <h2 class="nameStyle">Marcela Rubio Madriz</h2>
+        <p class="bioStyle">
+          Estudiante de Ingeniería en computación. Programadora Full-Stack me dediqué a hacer aportes al equipo de desarrollo tanto en la parte de diseño(css, bootstrap) como del lado del backend.
+        </p>
+      </div>
+      <img
+        class="rounded-circle imageOnTop moveImg img-fluid"
+        alt="100x100"
+        src="/images/marce_perfil.png"
+        data-holder-rendered="true"
+      />
+    </div>
+     <!--  6 -->
+     <div class="parentContainer container-fluid" style="margin-bottom: 12vmin;">
+      <div class="textToBeCovered opaText">
+        <h2 class="nameStyle">Rafael Salgado</h2>
+        <p class="bioStyle">
+          Soy Tapatío, estudíe Ingeniería Mecatrónica en Ceti Colomos. En este
+          momento estoy trabajando en mejorar mis habilidades en desarrollo de
+          software enfocándome en desarrollo web y móvil.
+        </p>
+      </div>
+      <img
+        class="rounded-circle imageOnTop moveImg img-fluid"
+        alt="100x100"
+        src="/images/perfil_rafa.png"
+        data-holder-rendered="true"
+      />
+    </div>
+    <div class="d-lg-flex container-fluid footer col-md-12">
+      <div class="container  align-self-center bd-highlight">
+          <div class="fab fa-facebook fa-2x px-3 footerText"></div>
+          <div class="fab fa-twitter fa-2x px-3 footerText"></div>
+          <div class="fab fa-instagram fa-2x px-3 footerText"></div>
+      </div>
+      
+          <div class="p-1 d-flex justify-content-end ">
+              <div class="p-4 footerText ">Términos</div>
+              <div class="p-4 footerText">Copyrigth</div>
+          </div>
+  </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     >
   </script>
-
-  </script>
-  
-  
-</body>
+  </body>
 </html>
 
 
