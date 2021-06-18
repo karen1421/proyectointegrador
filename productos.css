@@ -1,0 +1,343 @@
+.navbar-custom0 {
+  background-color: #373737;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-custom1 {
+	background-color: #37373700;
+	-webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-brand {
+    color: #FFB938;
+    font: bold;
+    font-family: bauhaus;
+    font-size: 3.2rem;
+}
+.navbar-brand:hover{
+    color: #FFB938;
+    cursor: pointer;
+}
+.navbar-text0{
+  color: #373737;
+  font-family: Roboto;
+  font-size: 2.3vmin;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-text1{
+    color: #fffaf1;
+    font-family: Roboto;
+    font-size: 2.3vmin;
+    -webkit-transition: background-color 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+}
+.navbar-text1:hover{
+    color: #ffb938;
+    text-decoration: none;
+}
+.navbar-text0:hover{
+  color: #ffb938;
+  text-decoration: none;
+}
+.nav-link:focus{
+    color: #ffb938;
+}
+.nav-link:hover svg path {
+    fill: #ffb938;
+}
+
+.navbar-toggler0{
+  border-color: #373737;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-toggler1{
+  border-color: #fffaf1;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+} 
+
+.navbar button.navbar-toggler0 {
+  color: #373737;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar button.navbar-toggler1 {
+  color: #fffaf1;
+ -webkit-transition: background-color 0.4s ease-out;
+ -moz-transition: background-color 0.4s ease-out;
+ -o-transition: background-color 0.4s ease-out;
+ transition: background-color 0.4s ease-out;
+}
+
+.footer {
+  left:0px;
+  bottom:0px;
+  background-color: #373737 !important;
+  margin-top: auto;
+}
+.footerText{
+  cursor: pointer ;
+  color: #D1D5DE ;
+  font-size: 2vmin !important;
+}
+.footerText:hover {
+    color:#EEC23E !important;
+}
+
+body{
+  background: url("/images/mesa-premium-white-woodgrain-detail-1250x570.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  width: 33vmin;
+  height: 33vmin;
+}
+
+form{
+  width: 50vw;
+  background-color: #e7e7e700;
+  margin: 0 auto;
+}
+
+form>input, form>textarea, form>select{
+  margin-bottom: 1.5vmin;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 1vmin;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  border: none; 
+  color: #525c66; 
+  font-size: 1em;
+  resize: horizontal; 
+}
+
+article {
+  margin: auto 0;
+}
+
+/* contenido del cuerpo */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}.navbar-custom0 {
+  background-color: #373737;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-custom1 {
+	background-color: #37373700;
+	-webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-brand {
+    color: #FFB938;
+    font: bold;
+    font-family: bauhaus;
+    font-size: 3.2rem;
+}
+.navbar-brand:hover{
+    color: #FFB938;
+    cursor: pointer;
+}
+.navbar-text0{
+  color: #373737;
+  font-family: Roboto;
+  font-size: 2.3vmin;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-text1{
+    color: #fffaf1;
+    font-family: Roboto;
+    font-size: 2.3vmin;
+    -webkit-transition: background-color 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+}
+.navbar-text1:hover{
+    color: #ffb938;
+    text-decoration: none;
+}
+.navbar-text0:hover{
+  color: #ffb938;
+  text-decoration: none;
+}
+.nav-link:focus{
+    color: #ffb938;
+}
+.nav-link:hover svg path {
+    fill: #ffb938;
+}
+
+.navbar-toggler0{
+  border-color: #373737;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-toggler1{
+  border-color: #fffaf1;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+} 
+
+.navbar button.navbar-toggler0 {
+  color: #373737;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+.navbar button.navbar-toggler1 {
+  color: #fffaf1;
+-webkit-transition: background-color 0.4s ease-out;
+-moz-transition: background-color 0.4s ease-out;
+-o-transition: background-color 0.4s ease-out;
+transition: background-color 0.4s ease-out;
+}
+
+.footer {
+  left:0px;
+  bottom:0px;
+  background-color: #373737 !important;
+  margin-top: auto;
+}
+.footerText{
+  cursor: pointer ;
+  color: #D1D5DE ;
+  font-size: 2vmin !important;
+}
+.footerText:hover {
+    color:#EEC23E !important;
+}
+
+body{
+  background: url("images/mesa-premium-white-woodgrain-detail-1250x570.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  width: 33vmin;
+  height: 33vmin;
+}
+
+form{
+  width: 50vw;
+  background-color: #e7e7e700;
+  margin: 0 auto;
+}
+
+form>input, form>textarea, form>select{
+  margin-bottom: 1.5vmin;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 1vmin;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  border: none; 
+  color: #525c66; 
+  font-size: 1em;
+  resize: horizontal; 
+}
+
+.btn-de-froma {
+	background-color: #eec23e;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+}
+form>button:hover{
+	background-color: #525c66;
+}
+article {
+  margin: auto 0;
+}
+textarea { resize: none; }
+
+
+/* contenido del cuerpo */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+h1{
+  font-size: 6.4mm;
+  color: #EEC23E;
+align-self: center;
+}
+.containere{
+width: 90%;
+max-width: 1300px;
+border:10mm;
+border-color:#ffb938;
+font-size: 30px;
+line-height:50px ;
+text-align: center;
+margin: auto;
+}
+
+.info {
+font-size:small;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: lightgray;
+width: 248px;
+}
+
+.d-block w-100{
+width:50%;
+
+
+}
+
+
