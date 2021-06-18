@@ -74,6 +74,24 @@
       }); 
       // DOMContentLoaded  end
     </script>
+    <script>
+      function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByClassName("col");
+          for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByClassName("info")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+              } else {
+                  li[i].style.display = "none";
+              }
+          }
+      }
+      </script>
   </head>
 
   <body>
@@ -110,8 +128,8 @@
      <!-- ============= grid ============== -->
     <h1> Listado de Productos </h1>
     <p></p>
-    
-    <div class="containere">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <div class="containere" id="myUL">
       <div class="row row-cols-5">
         <div class="col"><img src="images/trompeta.jpg" alt="Cargando imagen">
         <div class="info">Trompeta Silver | $7,890.00 MX</div></div>
