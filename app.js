@@ -72,15 +72,21 @@ router.get("/home", function (req, res) {
 router.get("/home-page", function (req, res) {
   res.redirect('/html/landing.html');
 });
-router.get("/car-page", function (req, res) {
-  res.redirect('/html/carrito.html');
+router.get("/products-page", function (req, res) {
+  res.redirect('/html/productos.html');
+});
+router.get("/contact-page", function (req, res) {
+  res.redirect('/html/contact.html');
+});
+router.get("/about-page", function (req, res) {
+  res.redirect('/html/about.html');
 });
 router.get("/login-page", function (req, res) {
   res.redirect('/html/login.html');
 });
-
-
-
+router.get("/car-page", function (req, res) {
+  res.redirect('/html/carrito.html');
+});
 
 
 router.post("/contact-page", function (req, res) {
