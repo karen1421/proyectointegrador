@@ -226,3 +226,27 @@ textarea { resize: none; }
     flex: 1;
   }
 }
+
+#primero {
+  background-image: url("/images/cuerdas.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color: #FFB938;
+}
+
+#segundo {
+  background-image: url("/images/viento.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color: white;
+}
+
+#tercero {
+  background-image: url("/images/precusion.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color:black;
+}
