@@ -77,7 +77,7 @@
     <!-- ============= COMPONENT ============== -->
     <nav id="navbar_top" class="navbar navbar-expand-lg ">
       <div class="container">
-         <a id="navbar_brand" onclick="document.getElementById('formHome').submit();" class="nav-link navbar-brand" >Virtuos</a>
+         <a id="navbar_brand" href="/home-page" class="nav-link navbar-brand">Virtuos</a>
        <button class="navbar-toggler" id="hamburga" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-bars"></i></span>
          </button>
@@ -85,10 +85,11 @@
        
      
        <ul class="navbar-nav ms-auto">
+
          <li class="nav-item"><a id="navlinks0" class="nav-link navbar-text0">Productos</a></li>
-         <li class="nav-item"><a id="navlinks1" onclick="document.getElementById('formContact').submit();" class="nav-link navbar-text0">Contacto</a></li>
-         <li class="nav-item"><a id="navlinks2" class="nav-link navbar-text0">Acerca</a></li>
-         <li class="nav-item"><a id="navlinks3" onclick="document.getElementById('formLogin').submit();" class="nav-link navbar-text0">Inicio de sesión</a></li>
+         <li onclick="document.getElementById('formContact').submit();" class="nav-item" href="#"><a id="navlinks1" class="nav-link navbar-text0">Contacto</a></li>
+         <li onclick="document.getElementById('formAbout').submit();"class="nav-item"><a id="navlinks2" class="nav-link navbar-text0">Acerca</a></li>
+         <li class="nav-item"><a id="navlinks3" class="nav-link navbar-text0">Inicio de sesión</a></li>
          </ul>
          <ul class="navbar-nav sm-icons mr-0">
              <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" style="fill:#373737;" id="busca" class="bi bi-search" viewBox="0 0 16 16">
@@ -108,113 +109,51 @@
  <form id="formHome" method="POST" action="/home-page"></form>
  <form id="formContact" method="POST" action="/contact-page"></form>
  <form id="formAbout" method="POST" action="/about-page"></form>
- <form id="formLogin" method="POST" action="/login-page"></form>
-    <h1 class="teamStyle" style="margin-top: 5.5rem">Acerca de nosotros</h1>
+ <!-- contenido del cuerpo -->
 
-    <p class="aboutStyle">
-      Este proyecto nace con la finalidad de mejorar los procesos de compra y venta de productos en línea, a través de una interfaz de usuario (UI) amigable, responsiva y fluida.  Somos un equipo de desarrollo ágil Full stack con orientación al detalle que apuesta por la creación de herramientas eficientes y accesibles. El equipo esta conformado por:
 
-    </p>
+ <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+     
+  
+      <form action="" method="POST" class="formulario" style="background-color: #373737;">
+          <div >
+            <div class="row">
+                <div class="col" style="padding-right: 0;">
+                    <button type="button" class="btn btn-outline-light" style="width: 100%;border-radius: 0;">Ingresar</button>
+                </div>
+                <div class="col" style="padding-left: 0;">
+                    <button type="button" class="btn btn-outline-light" style="width: 100%;border-radius: 0;">Registrarse</button>
+                </div>
+                
+              </div>
+              <div style="padding: 3rem;">
+                <input type="email" class="form-control" name="email" id="exampleFormControlInput3" placeholder="nombre@ejemplo.com" ><br>
+                <input type="password" class="form-control" name="password" id="exampleFormControlInput3" placeholder="password" required><br>
+                <button type="button" class="btn btn-outline-warning" style="position: relative; left: 40%;">Iniciar Sesión</button>
+              </div>
+              
+             
+              
+          </div>
+      </form>
+  
+      <!-- Remind Passowrd -->
+      
+  
+    </div>
+  </div>
 
-    <h1 class="teamStyle">El Equipo</h1>
-   <!--  1 -->
-    <div class="parentContainer container-fluid">
-      <div class="textToBeCovered opaText">
-        <h2 class="nameStyle">Karen Maldonado</h2>
-        <p class="bioStyle">
-          Nací en Chiapas. Soy Lic. en Mercadotecnia con enfoque en Investigación de Mercado y Marketing Digital. Actualmente soy parte del equipo como  Desarrolladora Full Stack.
 
-        </p>
-      </div>
-      <img
-        class="rounded-circle imageOnTop moveImg img-fluid"
-        alt="100x100"
-        src="/images/karen_perfil.png"
-        data-holder-rendered="true"
-      />
-    </div>
-    <!--  2 -->
-    <div class="parentContainer container-fluid">
-      <div class="textToBeCovered opaText">
-        <h2 class="nameStyle">Liliana Navarro</h2>
-        <p class="bioStyle">
-          Administradora financiera enfocada en la solución de procesos de trabajo mediante herramientas tecnológicas. Desarrolladora de proyectos en JS y Java y entusiasta de las plantas.
-        </p>
-      </div>
-      <img
-        class="rounded-circle imageOnTop moveImg img-fluid"
-        alt="100x100"
-        src="/images/lily_perfil.png"
-        data-holder-rendered="true"
-      />
-    </div>
-    <!--  3 -->
-    <div class="parentContainer container-fluid">
-      <div class="textToBeCovered opaText">
-        <h2 class="nameStyle">Alexis Cervantes</h2>
-        <p class="bioStyle">
-          Estudiante de ingeniería industrial, con  en busca de darle un giro a su carrera laboral enfocado al FrontEnd.
-        </p>
-      </div>
-      <img
-        class="rounded-circle imageOnTop moveImg img-fluid"
-        alt="100x100"
-        src="/images/alexis_perfil.png"
-        data-holder-rendered="true"
-      />
-    </div>
-    <!--  4 -->
-    <div class="parentContainer container-fluid">
-      <div class="textToBeCovered opaText">
-        <h2 class="nameStyle">Rodrigo Contreras</h2>
-        <p class="bioStyle">
-          Ingeniero en diseño electrónico basado en Guadalajara, México. Apasionado de la aventura, la fotografía y la cocina. Dedicación al funcionamiento del UX desde ambos frentes.
-        </p>
-      </div>
-      <img
-        class="rounded-circle imageOnTop moveImg img-fluid"
-        alt="100x100"
-        src="/images/rodrigo_perfil.png"
-        data-holder-rendered="true"
-      />
-    </div>
-     <!--  5 -->
-     <div class="parentContainer container-fluid">
-      <div class="textToBeCovered opaText">
-        <h2 class="nameStyle">Marcela Rubio Madriz</h2>
-        <p class="bioStyle">
-          Estudiante de Ingeniería en computación. Programadora Full-Stack me dediqué a hacer aportes al equipo de desarrollo tanto en la parte de diseño(css, bootstrap) como del lado del backend.
-        </p>
-      </div>
-      <img
-        class="rounded-circle imageOnTop moveImg img-fluid"
-        alt="100x100"
-        src="/images/marce_perfil.png"
-        data-holder-rendered="true"
-      />
-    </div>
-     <!--  6 -->
-     <div class="parentContainer container-fluid" style="margin-bottom: 12vmin;">
-      <div class="textToBeCovered opaText">
-        <h2 class="nameStyle">Rafael Salgado</h2>
-        <p class="bioStyle">
-          Soy Tapatío, estudíe Ingeniería Mecatrónica en Ceti Colomos. En este
-          momento estoy trabajando en mejorar mis habilidades en desarrollo de
-          software enfocándome en desarrollo web y móvil.
-        </p>
-      </div>
-      <img
-        class="rounded-circle imageOnTop moveImg img-fluid"
-        alt="100x100"
-        src="/images/perfil_rafa.png"
-        data-holder-rendered="true"
-      />
-    </div>
+<!-- footer  -->
     <div class="d-lg-flex container-fluid footer col-md-12">
       <div class="container  align-self-center bd-highlight">
-          <div class="fab fa-facebook fa-2x px-3 footerText"></div>
-          <div class="fab fa-twitter fa-2x px-3 footerText"></div>
-          <div class="fab fa-instagram fa-2x px-3 footerText"></div>
+          <div class="fab fa-facebook px-3 footerText"></div>
+          <div class="fab fa-twitter px-3 footerText"></div>
+          <div class="fab fa-instagram px-3 footerText"></div>
       </div>
       
           <div class="p-1 d-flex justify-content-end ">
