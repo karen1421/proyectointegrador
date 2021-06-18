@@ -63,11 +63,20 @@ router.get("/about", function (req, res) {
 router.get("/contact", function (req, res) {
   res.sendFile(path.join(__dirname + "/html/contact.html"));
 });
+router.get("/login", function (req, res) {
+  res.sendFile(path.join(__dirname + "/html/login.html"));
+});
 router.get("/home", function (req, res) {
   res.sendFile(path.join(__dirname + "/html/landing.html"));
 });
+router.get("/home-page", function (req, res) {
+  res.redirect('/html/landing.html');
+});
 router.post("/contact-page", function (req, res) {
   res.redirect('/html/contact.html');
+});
+router.post("/login-page", function (req, res) {
+  res.redirect('/html/login.html');
 });
 router.post("/about-page", function (req, res) {
   res.redirect('/html/about.html');
