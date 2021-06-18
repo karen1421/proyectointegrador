@@ -242,3 +242,10 @@ textarea { resize: none; }
   color: white;
 }
 
+#tercero {
+  background-image: url("/images/precusion.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color:black;
+}
