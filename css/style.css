@@ -227,7 +227,13 @@ textarea { resize: none; }
 }
 
 #primero {
-  background-image: url("https://www.costco.com.mx/medias/sys_master/products/hee/h3b/11023225585694.jpg");
+  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/33827hd.jpg");
+  background-position: center;
+  background-size:contain;
+}
+
+#segundo {
+  background-image: url("https://www.10wallpaper.com/wallpaper/1366x768/1403/Alto_Saxophone-Windows_Wallpaper_1366x768.jpg");
   background-position: center;
   background-size:contain;
 }
