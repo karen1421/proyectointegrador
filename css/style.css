@@ -252,7 +252,16 @@ textarea { resize: none; }
   color:black;
 }
 
-/* Estilo */
+#cuarto {
+  background-image: url("/images/electrica.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color:#FFB938;
+};
+
+
+/* Estilo carrito*/
 
 #caja {
   text-align: center;
@@ -271,6 +280,7 @@ textarea { resize: none; }
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
 box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+
 
 h1{
   font-size: 6.4mm;
