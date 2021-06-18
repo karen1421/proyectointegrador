@@ -225,3 +225,9 @@ textarea { resize: none; }
     flex: 1;
   }
 }
+
+#primero {
+  background-image: url("https://www.costco.com.mx/medias/sys_master/products/hee/h3b/11023225585694.jpg");
+  background-position: center;
+  background-size:contain;
+}
