@@ -72,6 +72,17 @@ router.get("/home", function (req, res) {
 router.get("/home-page", function (req, res) {
   res.redirect('/html/landing.html');
 });
+router.get("/car-page", function (req, res) {
+  res.redirect('/html/carrito.html');
+});
+router.get("/login-page", function (req, res) {
+  res.redirect('/html/login.html');
+});
+
+
+
+
+
 router.post("/contact-page", function (req, res) {
   res.redirect('/html/contact.html');
 });
