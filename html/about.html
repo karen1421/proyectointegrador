@@ -77,7 +77,7 @@
     <!-- ============= COMPONENT ============== -->
     <nav id="navbar_top" class="navbar navbar-expand-lg ">
       <div class="container">
-         <a id="navbar_brand" onclick="document.getElementById('formHome').submit();" class="nav-link navbar-brand" >Virtuos</a>
+         <a id="navbar_brand" href="/home-page" class="nav-link navbar-brand" >Virtuos</a>
        <button class="navbar-toggler" id="hamburga" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-bars"></i></span>
          </button>
@@ -85,10 +85,10 @@
        
      
        <ul class="navbar-nav ms-auto">
-         <li class="nav-item"><a id="navlinks0" class="nav-link navbar-text0">Productos</a></li>
-         <li class="nav-item"><a id="navlinks1" onclick="document.getElementById('formContact').submit();" class="nav-link navbar-text0">Contacto</a></li>
-         <li class="nav-item"><a id="navlinks2" class="nav-link navbar-text0">Acerca</a></li>
-         <li class="nav-item"><a id="navlinks3" onclick="document.getElementById('formLogin').submit();" class="nav-link navbar-text0">Inicio de sesión</a></li>
+        <li class="nav-item"><a id="navlinks0" class="nav-link navbar-text0" href="/products-page">Productos</a></li>
+         <li class="nav-item"><a id="navlinks1" class="nav-link navbar-text0" href="/contact-page">Contacto</a></li>
+         <li class="nav-item"><a id="navlinks2" class="nav-link navbar-text0" href="/about-page">Acerca</a></li>
+         <li class="nav-item"><a id="navlinks3" class="nav-link navbar-text0" href="/login-page" >Inicio de sesión</a></li>
          </ul>
          <ul class="navbar-nav sm-icons mr-0">
              <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" style="fill:#373737;" id="busca" class="bi bi-search" viewBox="0 0 16 16">
@@ -105,10 +105,7 @@
       </div> <!-- container-fluid.// -->
      </nav>
  <!-- ============= COMPONENT END// ============== -->
- <form id="formHome" method="POST" action="/home-page"></form>
- <form id="formContact" method="POST" action="/contact-page"></form>
- <form id="formAbout" method="POST" action="/about-page"></form>
- <form id="formLogin" method="POST" action="/login-page"></form>
+ 
     <h1 class="teamStyle" style="margin-top: 5.5rem">Acerca de nosotros</h1>
 
     <p class="aboutStyle">
