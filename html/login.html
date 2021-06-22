@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login-style.css">
     <title>Virtuos</title>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function(){
@@ -110,40 +111,41 @@
  <!-- contenido del cuerpo -->
 
 
- <div class="wrapper fadeInDown">
-    <div id="formContent">
-      <!-- Tabs Titles -->
-  
-      <!-- Icon -->
-     
-  
-      <form action="" method="POST" class="formulario" style="background-color: #373737;">
-          <div >
-            <div class="row">
-                <div class="col" style="padding-right: 0;">
-                    <button type="button" class="btn btn-outline-light" style="width: 100%;border-radius: 0;">Ingresar</button>
-                </div>
-                <div class="col" style="padding-left: 0;">
-                    <button type="button" class="btn btn-outline-light" style="width: 100%;border-radius: 0;">Registrarse</button>
-                </div>
-                
-              </div>
-              <div style="padding: 3rem;">
-                <input type="email" class="form-control" name="email" id="exampleFormControlInput3" placeholder="nombre@ejemplo.com" ><br>
-                <input type="password" class="form-control" name="password" id="exampleFormControlInput3" placeholder="password" required><br>
-                <button type="button" class="btn btn-outline-warning" style="position: relative; left: 40%;">Iniciar Sesión</button>
-              </div>
-              
-             
-              
-          </div>
-      </form>
-  
-      <!-- Remind Passowrd -->
-      
-  
+
+ <div class="tabs">
+  <div class="tab-header">
+    <div class="active">
+      <i>Ingresar</i>
+    </div>
+    <div>
+      <i>Registrarse</i>
     </div>
   </div>
+  <div class="tab-indicator"></div>
+  <div class="tab-body">
+    <div class="active">
+      <form action="" method="POST" class="form">
+        <input type="email" class="form-control" name="email" id="exampleFormControlInput3" placeholder="Correo" ><br>
+        <input type="password" class="form-control" name="password" id="exampleFormControlInput3" placeholder="Contraseña" required><br>
+        <button type="button" class="btn btn-outline-warning button-login">Iniciar Sesión</button>
+      </form>
+    </div>
+    <div>
+      <form action="" method="POST" class="form-signup">
+        <input type="text" class="form-control-signup" name="password" id="exampleFormControlInput3" placeholder="Nombre" required><br>
+        <input type="Correo" class="form-control-signup" name="email" id="exampleFormControlInput3" placeholder="Correo" ><br>
+        <input type="password" class="form-control-signup" name="password" id="exampleFormControlInput3" placeholder="Contraseña" required><br>
+        <button type="button" class="btn btn-outline-warning button-login" style="margin-top: 5px;">Registrarse</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+    
+  
 
 
 <!-- footer  -->
@@ -159,9 +161,9 @@
               <div class="p-4 footerText">Copyrigth</div>
           </div>
   </div>
+  <script src="/js/login-script.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    
-    <script
+   <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
