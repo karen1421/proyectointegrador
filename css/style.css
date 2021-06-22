@@ -89,7 +89,7 @@
 .navbar-text0{
   color: #373737;
   font-family: Roboto;
-  font-size: 2.3vmin;
+  font-size: 2.3vh;
   -webkit-transition: background-color 0.4s ease-out;
   -moz-transition: background-color 0.4s ease-out;
   -o-transition: background-color 0.4s ease-out;
@@ -98,7 +98,7 @@
 .navbar-text1{
     color: #fffaf1;
     font-family: Roboto;
-    font-size: 2.3vmin;
+    font-size: 2.3vh;
     -webkit-transition: background-color 0.4s ease-out;
     -moz-transition: background-color 0.4s ease-out;
     -o-transition: background-color 0.4s ease-out;
@@ -225,4 +225,88 @@ textarea { resize: none; }
   .flex-md-equal > * {
     flex: 1;
   }
+}
+
+/* Apartados landing */
+#primero {
+  background-image: url("/images/cuerdas.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color: #FFB938;
+}
+
+#segundo {
+  background-image: url("/images/viento.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color: white;
+}
+
+#tercero {
+  background-image: url("/images/precusion.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color:black;
+}
+
+#cuarto {
+  background-image: url("/images/electrica.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color:#FFB938;
+};
+
+
+/* Estilo carrito*/
+
+.caja1 {
+  text-align: center;
+  color: #FFB938;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+
+#caja2 {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+#cuadro {
+-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+
+h1{
+  font-size: 6.4mm;
+  color: #EEC23E;
+align-self: center;
+}
+.containere{
+width: 90%;
+max-width: 1300px;
+border:10mm;
+border-color:#ffb938;
+font-size: 30px;
+line-height:50px ;
+text-align: center;
+margin: auto;
+}
+
+.info {
+font-size:small;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: lightgray;
+width: 248px;
+}
+
+.d-block w-100{
+width:50%;
+
+
 }

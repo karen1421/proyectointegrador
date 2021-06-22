@@ -86,10 +86,10 @@
      
        <ul class="navbar-nav ms-auto">
 
-         <li class="nav-item"><a id="navlinks0" class="nav-link navbar-text0">Productos</a></li>
-         <li onclick="document.getElementById('formContact').submit();" class="nav-item" href="#"><a id="navlinks1" class="nav-link navbar-text0">Contacto</a></li>
-         <li onclick="document.getElementById('formAbout').submit();"class="nav-item"><a id="navlinks2" class="nav-link navbar-text0">Acerca</a></li>
-         <li class="nav-item"><a href="/login-page" id="navlinks3" class="nav-link navbar-text0">Inicio de sesión</a></li>
+        <li class="nav-item"><a id="navlinks0" class="nav-link navbar-text0" href="/products-page">Productos</a></li>
+        <li class="nav-item"><a id="navlinks1" class="nav-link navbar-text0" href="/contact-page">Contacto</a></li>
+        <li class="nav-item"><a id="navlinks2" class="nav-link navbar-text0" href="/about-page">Acerca</a></li>
+        <li class="nav-item"><a id="navlinks3" class="nav-link navbar-text0" href="/login-page" >Inicio de sesión</a></li>
          </ul>
          <ul class="navbar-nav sm-icons mr-0">
              <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" style="fill:#373737;" id="busca" class="bi bi-search" viewBox="0 0 16 16">
@@ -106,9 +106,7 @@
       </div> <!-- container-fluid.// -->
      </nav>
  <!-- ============= COMPONENT END// ============== -->
- <form id="formHome" method="POST" action="/home-page"></form>
- <form id="formContact" method="POST" action="/contact-page"></form>
- <form id="formAbout" method="POST" action="/about-page"></form>
+ 
  <!-- contenido del cuerpo -->
 
 
@@ -126,16 +124,16 @@
                     <button type="button" class="btn btn-outline-light" style="width: 100%;border-radius: 0;">Carrito(0)</button>
                 </div>
                 <div class="col" style="padding-left: 0;">
-                    <button type="button" class="btn btn-outline-light" style="width: 100%;border-radius: 0;">Guardad(0)</button>
+                    <button type="button" class="btn btn-outline-light" style="width: 100%;border-radius: 0;">Guardado(0)</button>
                 </div>
                 
               </div>
               <div id="cuadro" style="padding: 8rem;">
-               <h1 id="caja">Tu carrito está vacío</h1>
-               <P id="caja2">¿No sabes que compara? Consulta nuestro menú de productos.</P>
+               <h1 id="caja1" class="caja1" style="text-align: center; font-family: 'Roboto', sans-serif;">Tu carrito está vacío</h1>
+               <P id="caja2">¿No sabes que comprar? Consulta nuestro menú de productos.</P>
               </div>
-              
-             
+
+
               
           </div>
       </form>
@@ -157,7 +155,7 @@
       
           <div class="p-1 d-flex justify-content-end ">
               <div class="p-4 footerText ">Términos</div>
-              <div class="p-4 footerText">Copyrigth</div>
+              <div class="p-4 footerText">Copyright</div>
           </div>
   </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
