@@ -310,3 +310,65 @@ width:50%;
 
 
 }
+
+.video_container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video_text::before {
+  content: "";
+  animation: animate infinite 20s;
+  padding-left: 10px;
+}
+
+@keyframes animate {
+  10% {
+      content: "Vivir es ser musical, comenzando con la sangre bailando en tus venas. Todo lo vive tiene un ritmo. ¿Sientes tu música?” -Michael Jackson";
+  }
+  50% {
+      content: "Para mí, hay algo primitivamente calmante en la música, se va directamente a mi sistema nervioso, haciéndome sentir a 10 metros de altura. -Eric Clapton";
+  }
+  75% {
+      content: "La música es sinónimo de libertad, de tocar lo que quieras y como quieras, siempre que sea bueno y tenga pasión, que la música sea el alimento del amor. -Kurt Cobain";
+  }
+}
+
+video.fillWidth {
+  width: 100%;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
