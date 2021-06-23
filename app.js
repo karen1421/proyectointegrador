@@ -73,7 +73,7 @@ router.get("/home-page", function (req, res) {
   res.redirect('/html/landing.html');
 });
 router.get("/products-page", function (req, res) {
-  res.redirect('/html/productos.html');
+  res.redirect('/html/lista.html');
 });
 router.get("/contact-page", function (req, res) {
   res.redirect('/html/contact.html');
