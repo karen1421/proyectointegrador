@@ -159,13 +159,18 @@
 .footerText{
   cursor: pointer ;
   color: #D1D5DE ;
-  font-size: 5vmin !important;
+  font-size: 4vmin !important;
  /*font-size: calc(5em + 5vw) important! ;*/
 }
 .footerText:hover {
     color:#EEC23E !important;
 }
 
+footer{
+  position: fixed;
+  bottom: 0; 
+  width: 100%;
+}
 
 
 
