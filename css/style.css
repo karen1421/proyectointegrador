@@ -373,3 +373,15 @@ video.fillWidth {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.card-columns {
+  padding: 10px;
+  margin-left: 10px;
+  align-content: center;
+  }
+
+.card-img-top{
+
+width: fit-content;
+height: fit-content;
+}
