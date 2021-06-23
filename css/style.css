@@ -243,6 +243,11 @@ textarea { resize: none; }
   color: #FFB938;
 }
 
+#primero:hover{
+ background-image: url("/images/Cuerdas2.jpg");
+ transition: background-image 0.8s ease-out;
+}
+
 #segundo {
   background-image: url("/images/viento.jpg");
   background-position: center;
@@ -250,6 +255,11 @@ textarea { resize: none; }
   height: 500px;
   color: white;
 }
+
+#segundo:hover{
+  background-image: url("/images/viento2.jpg");
+  transition: background-image 0.8s ease-out;
+ }
 
 #tercero {
   background-image: url("/images/precusion.jpg");
