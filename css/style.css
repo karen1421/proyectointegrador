@@ -324,6 +324,7 @@ width:50%;
   content: "";
   animation: animate infinite 20s;
   padding-left: 10px;
+  top: -50px;
 }
 
 @keyframes animate {
