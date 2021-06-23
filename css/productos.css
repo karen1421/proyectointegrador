@@ -200,7 +200,16 @@ width: 248px;
 width:50%;
 
 
-}
+}}
 
+.card-columns {
+  padding: 10px;
+  margin-left: 10px;
+  align-content: center;
+  }
 
+.card-img-top{
+
+width: fit-content;
+height: fit-content;
 }

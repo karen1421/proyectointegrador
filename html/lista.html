@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Prata|Roboto:light|Work Sans:regular"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/css/productos.css">
+
+    <title>Virtuos</title>
+    <script type="text/javascript">
+    
+      document.addEventListener("DOMContentLoaded", function(){
+        
+        window.addEventListener('scroll', function() {
+          
+          if (window.scrollY > 10) {
+            document.getElementById('navbar_top').classList.add('fixed-top');
+            document.getElementById('navbar_top').classList.add('navbar-custom0');
+            document.getElementById('navbar_top').classList.remove('navbar-custom1');
+            document.getElementById('navlinks0').classList.add('navbar-text1');
+            document.getElementById('navlinks0').classList.remove('navbar-text0');
+            document.getElementById('navlinks1').classList.add('navbar-text1');
+            document.getElementById('navlinks1').classList.remove('navbar-text0');
+            document.getElementById('navlinks2').classList.add('navbar-text1');
+            document.getElementById('navlinks2').classList.remove('navbar-text0');
+            document.getElementById('navlinks3').classList.add('navbar-text1');
+            document.getElementById('navlinks3').classList.remove('navbar-text0');
+            document.getElementById('busca').style.fill = '#fffaf1';
+            document.getElementById('compra').style.fill = '#fffaf1';
+            document.getElementById('hamburga').classList.remove('navbar-toggler0');
+            document.getElementById('hamburga').classList.add('navbar-toggler1');
+            document.getElementById('hamburga').classList.remove('button.navbar-toggler0');
+            document.getElementById('hamburga').classList.add('button.navbar-toggler1');
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+          } else {
+             document.getElementById('navbar_top').classList.remove('fixed-top');
+             document.getElementById('navbar_top').classList.remove('navbar-custom0');
+            document.getElementById('navbar_top').classList.add('navbar-custom1');
+            document.getElementById('navlinks0').classList.add('navbar-text0');
+            document.getElementById('navlinks0').classList.remove('navbar-text1');
+            document.getElementById('navlinks1').classList.add('navbar-text0');
+            document.getElementById('navlinks1').classList.remove('navbar-text1');
+            document.getElementById('navlinks2').classList.add('navbar-text0');
+            document.getElementById('navlinks2').classList.remove('navbar-text1');
+            document.getElementById('navlinks3').classList.add('navbar-text0');
+            document.getElementById('navlinks3').classList.remove('navbar-text1');
+            document.getElementById('busca').style.fill = '#373737';
+            document.getElementById('compra').style.fill = '#373737';
+            document.getElementById('hamburga').classList.remove('navbar-toggler1');
+            document.getElementById('hamburga').classList.add('navbar-toggler0');
+            document.getElementById('hamburga').classList.remove('button.navbar-toggler1');
+            document.getElementById('hamburga').classList.add('button.navbar-toggler0');
+             // remove padding top from body
+            document.body.style.paddingTop = '0';
+          }
+        });
+      }); 
+      // DOMContentLoaded  end
+    </script>
+    <script>
+      function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByClassName("col");
+          for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByClassName("info")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+              } else {
+                  li[i].style.display = "none";
+              }
+          }
+      }
+      </script>
+  </head>
+
+  <body>
+    <!-- ============= COMPONENT ============== -->
+    <nav id="navbar_top" class="navbar navbar-expand-lg ">
+      <div class="container">
+          <a id="navbar_brand" class="nav-link navbar-brand" href="landing.html">Virtuos</a>
+        <button class="navbar-toggler" id="hamburga" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a id="navlinks0" class="nav-link" href="#">Productos</a></li>
+        <li class="nav-item"><a id="navlinks1" class="nav-link" href="contact.html">Contacto</a></li>
+        <li class="nav-item"><a id="navlinks2" class="nav-link" href="#">Acerca</a></li>
+        <li class="nav-item"><a id="navlinks3" class="nav-link" href="#">Inicio de sesión</a></li>
+        </ul>
+        <ul class="navbar-nav sm-icons mr-0">
+          <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" style="fill:#373737;" id="busca" class="bi bi-search" viewBox="0 0 16 16">
+               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+             </svg></a></li>
+             <li class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" style="fill:#373737;" id="compra" class="bi bi-cart" viewBox="0 0 16 16">
+               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+             </svg></a></li>
+           </ul>
+         </li>
+       </ul>
+     
+       </div> <!-- navbar-collapse.// -->
+      </div> <!-- container-fluid.// -->
+     </nav>
+<!-- Para la distribución de las cards-->
+<div id="list-items" class="row">
+        <div class="card-columns"> 
+
+<!--Javasccript Código-->
+
+<script>
+function addItem(item){
+    const itemHTML = '<div class="card" style="width: 20rem;">\n' +
+        '    <img src="'+item.img +'" class="card-img-top img-fluid" alt="image">\n' +
+        '    <div class="card-body">\n' +
+        '        <h5 class="card-title">'+item.name+'</h5>\n' +
+        '        <p class="card-text">'+item.description+'</p>\n' +
+        '        <a href="#" class="btn btn-warning btn-block"> Agregar </a>\n' +
+        '    </div>\n' +
+        '</div>\n' +
+        '<br/>';
+    const itemsContainer = document.getElementById("list-items");
+    itemsContainer.innerHTML += itemHTML;
+}
+// Listas de objetos a importarse automáticamente guardando la estructura que está en la función. Pidieron 10 pero son 12 //
+addItem({'name':'Piano',
+    'img':'https://d1aeri3ty3izns.cloudfront.net/media/67/671442/600/preview.jpg',
+    'description':'Piano de cola con pedal. Para el armazón sobre el que se asientan las cuerdas se usa madera de roble, abeto, haya o nogal.'});
+
+addItem({'name':'Trompeta',
+    'img':'http://images.musicstore.de/images/1280/yamaha-ytr-2330-trompeta-si-bemol_1_BLA0003132-000.jpg',
+    'description':'Boquilla de trompeta (3 C 5C 7C) para instrumentos de embouchure hecho de latón chapado en oro, compatible con instrumentos musicales Yamaha Bach.'})
+
+    addItem({'name':'Clarinete',
+    'img':'https://www.atelierdecelia.com/productos/imagenes/img_3791_1715cce435bb965ed28aa255e7382d3d_20.jpg',
+    'description':'Embocadura de caña sujeta a la boquilla mediante una abrazadera.'})
+
+    addItem({'name':'Saxofón alto',
+    'img':'https://karmamusic.mx/5440-large_default/sax-alto-laqueado-cyrus-winds------c.jpg',
+    'description':'Hecho de latón y consta de una boquilla de plástico, madera o de metal con una única caña.'})
+
+    addItem({'name':'Saxofón Sopranino',
+    'img':'https://ae01.alicdn.com/kf/HTB1EtOSaGSs3KVjSZPiq6AsiVXab.jpg_q50.jpg',
+    'description':'Contiene 25 llaves y una boquilla en la cual se coloca una caña sostenida por la abrazadera (normalmente) de metal.'})
+
+    addItem({'name':'Guitarra Eléctrica',
+    'img':'https://lh3.googleusercontent.com/proxy/2azi1iwnVpzDBoO8j8hdCAXF8Y7JSG8HWGsQr0g4xLVIslkHRFtpU6C7E1SKOKJKv5wOpfGVhRF5yRATuBW69gNQDaAxpR5JVUWvqbLrY2rIx23-NBWD4zO_SqqyF3ce6DlLQ3G55WgG8NvisXrd53LWnHHYyyqkxDCldAMwBy1g0_WwZZ_JyfBsa_P2bLwaSoaxOW8VNS2u',
+    'description':'Hecha de materiales sintéticos que incluyen materiales plásticos (como el policarbonato) y aleaciones de aluminio.'})
+
+    addItem({'name':'Batería Junior',
+    'img':'https://www.electronicateran.com/391-large_default/bateria-acustica-yamaha-gigmaker-color-negra.jpg',
+    'description':'Contiene ccesorios relativamente comunes (tales como el cencerro, panderetas, bloques de madera, entre otros).'})
+
+    addItem({'name':'Guitarra Clásica',
+    'img':'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRuXUxuKy6eLtS_jUC_fuJ2dtePy-Ffoe7Tw&usqp=CAU',
+    'description':'Hechas de madera de palisandro de la India (muy popular entre las guitarras que se utilizan entre los guitarristas flamencos) y ébano.'})
+
+    addItem({'name':'Bajo',
+    'img':'https://www.mrcdinstrumentos.com.mx/shared/productos/16833/0370760506.jpg',
+    'description':'Hecha de materiales sintéticos que incluyen materiales plásticos (como el policarbonato) y aleaciones de aluminio.'})
+
+    addItem({'name':'Violín',
+    'img':'https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/aba8435b-1bcd-4c76-a2d8-2c4155bb06d4.6b298595f5be5cdd8917ff782f4f1d23.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff',
+    'description':'Hechas de madera de palisandro de la India (muy popular entre las guitarras que se utilizan entre los guitarristas flamencos) y ébano.'})
+
+    addItem({'name':'Chello',
+    'img':'https://http2.mlstatic.com/D_NQ_NP_772746-MLM42338413434_062020-O.jpg',
+    'description':'Hechas de madera de palisandro de la India (muy popular entre las guitarras que se utilizan entre los guitarristas flamencos) y ébano.'})
+
+    addItem({'name':'Contrabajo',
+    'img':'https://www.mrcdinstrumentos.com.mx/shared/productos/105/AMCB001.jpg',
+    'description':'Hechas de madera de palisandro de la India (muy popular entre las guitarras que se utilizan entre los guitarristas flamencos) y ébano.'})
+ </script>
+
+</div>
+
+
+     <!-- ============= footer ============== -->
+    <div class="d-lg-flex container-fluid footer col-md-12">
+      <div class="container  align-self-center bd-highlight">
+          <div class="fab fa-facebook fa-2x px-3 footerText"></div>
+          <div class="fab fa-twitter fa-2x px-3 footerText"></div>
+          <div class="fab fa-instagram fa-2x px-3 footerText"></div>
+      </div>
+      
+          <div class="p-1 d-flex justify-content-end ">
+              <div class="p-4 footerText ">Términos</div>
+              <div class="p-4 footerText">Copyrigth</div>
+          </div>
+  </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    >
+  </script>
+
+
+  </body>
+</html>
