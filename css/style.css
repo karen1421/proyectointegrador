@@ -154,14 +154,15 @@
   left:0px;
   bottom:0px;
   background-color: #373737 !important;
-  margin-top: auto;
+  margin-top: auto !important; 
+  clear:both !important; 
 }
 
 
 .footerText{
   cursor: pointer ;
   color: #D1D5DE ;
-  font-size: 3vmin !important;
+  font-size: 1rem !important;
 
 }
 .footerText:hover {
