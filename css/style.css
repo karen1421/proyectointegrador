@@ -156,14 +156,24 @@
   background-color: #373737 !important;
   margin-top: auto;
 }
+
+
 .footerText{
   cursor: pointer ;
   color: #D1D5DE ;
-  font-size: 2vmin !important;
+  font-size: 4vmin !important;
+
 }
 .footerText:hover {
     color:#EEC23E !important;
 }
+
+footer{
+  position: fixed;
+  bottom: 0; 
+  width: 100%;
+}
+
 
 body{
   background: url("/images/mesa-premium-white-woodgrain-detail-1250x570.jpg");
