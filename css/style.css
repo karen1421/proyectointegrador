@@ -260,6 +260,14 @@ textarea { resize: none; }
   color:#FFB938;
 };
 
+#quinto {
+  background-image: url("/images/accesorios.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color:#FFB938;
+};
+
 
 /* Estilo carrito*/
 
