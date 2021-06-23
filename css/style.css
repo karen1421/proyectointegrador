@@ -357,7 +357,7 @@ height: fit-content;
   content: "";
   animation: animate infinite 20s;
   padding-left: 10px;
-  top: -50px;
+ vertical-align: middle;
 }
 
 @keyframes animate {
@@ -402,9 +402,9 @@ video.fillWidth {
 
 .centered {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 28%;
+  left: 0%;
+  font-size: 2vw;
 }
 
 .card-columns {
