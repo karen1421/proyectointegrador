@@ -271,7 +271,15 @@ textarea { resize: none; }
   background-position: center;
   background-size:cover;
   height: 500px;
-  color:#FFB938;
+  color:white;
+}
+
+#sexto {
+  background-image: url("/images/micro.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 500px;
+  color:black;
 }
 
 
