@@ -133,11 +133,11 @@
 <script>
 function addItem(item){
     const itemHTML = '<div class="card" style="width: 20rem;">\n' +
-        '    <img src="'+item.img +'" class="card-img-top img-fluid" alt="image">\n' +
+        '    <img src="'+item.img +'" class="card-img-top img-fluid h-100" alt="image">\n' +
         '    <div class="card-body">\n' +
         '        <h5 class="card-title">'+item.name+'</h5>\n' +
         '        <p class="card-text">'+item.description+'</p>\n' +
-        '        <a href="#" class="btn btn-warning btn-block"> Agregar </a>\n' +
+        '        <div class="d-grid text-nowrap mt-auto"><a href="#" class="btn btn-warning"> Agregar </a></div>\n' +
         '    </div>\n' +
         '</div>\n' +
         '<br/>';
